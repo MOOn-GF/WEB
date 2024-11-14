@@ -1,0 +1,130 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: rale;
+}
+ul,
+ol {
+      list-style: none;
+    }
+a{
+    text-decoration: none;
+}
+/* fonts */
+@font-face {
+    font-family: rale;
+    src: url(../fonts/Raleway-BoldItalic.ttf);
+}
+@font-face {
+    font-family: bitter;
+    src: url(../fonts/Bitter-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: lobster;
+    src: url(../fonts/LobsterTwo-BoldItalic.ttf);
+}
+/* header */
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.nav__link__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    }
+    .link{
+        font-family: bitter;
+    }
+    .link:hover{
+        background-color: #efb0f3;
+        height: 100px;
+    }
+    .nav__account{
+        cursor: pointer;
+    }
+/* HEDEAR adaptive */
+@media screen and (max-width: 400px){
+    .nav__link__box{
+        display: none;
+        gap: 10px;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .nav{
+        gap: 13px;
+    }
+}
+
+/* main */
+.main__box{
+    background-color: #efb0f3;
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+    gap: 100px;display: flex;
+   
+}
+.box{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.slogan{
+    font-size: 50px;
+
+}
+.btn{
+    border: rgb(179, 88, 88) 3px solid;
+    border-radius: 20px;
+    height: 50px;
+    width: 180px;
+    background-color:transparent;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.btn:hover{
+    border: rgb(209, 125, 125) 3px solid;
+    color: white;
+}
+.image1{
+    background-image: url(../img/totr.jpeg);
+    width: 300px;
+    height: 200px;
+}
+.image{
+    border-radius: 5px;
+    background-color: #efb0f3;
+}
+.image:hover{
+    background-color: transparent;
+    height: 150px;
+    width: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* box2 main */
+.box2{
+    width: 600px;
+}
+/* Main Addaptive */
+@media screen and  (max-width: 400px){
+    .slogan{
+        font-size: 35px;
+    }    
+    .btn{
+        width: 120px;
+        font-size: 15px;
+    }
+}
