@@ -1,0 +1,15 @@
+:root
+{
+    --main-color: #FCC7D1;
+    --sec-color:aliceblue;
+    --footer:#633251;
+    --btn-color:#b35858;
+    --btn-hicolor:#f67979;
+    --main-text:black;
+    --sec-text:white;
+    --name:#663399;
+    /* fonts */
+    --small:13px;
+    --normal:17px;
+    --medium:21px;
+}
